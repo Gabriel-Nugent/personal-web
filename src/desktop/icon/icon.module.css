@@ -1,0 +1,46 @@
+div.icon {
+  padding: 15px 10px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#iconOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 50ms;
+  background-color: #0000;
+  opacity: 0%;
+  cursor: pointer;
+  border: none;
+}
+
+#iconOverlay:focus, #iconOverlay:focus:hover {
+  opacity: 100%;
+  background-color: #00000030;
+  border: 2px solid #00000060;
+}
+
+#iconOverlay:hover {
+  opacity: 100%;
+  background-color: #00000010;
+  border: 2px solid #00000020;
+}
+
+img.icon {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 10px;
+}
+
+p.icon {
+  font-size: 24px;
+  text-align: center;
+}

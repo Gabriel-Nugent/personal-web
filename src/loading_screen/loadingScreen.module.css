@@ -1,0 +1,130 @@
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.loadingBox {
+  height: 400px;
+  width: 500px;
+  background-color: var(--paper-color);
+  border: 3px solid var(--outline-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+section.loadingProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1.loadingBox {
+  font-size: 24px;
+}
+
+h1.loadingBox span {
+  font-size: 40px;
+  display: inline-block;
+  -webkit-animation: wave-text 1s ease-in-out infinite;
+  animation: wave-text 1s ease-in-out infinite;
+}
+
+.loadingBox span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.loadingBox span:nth-of-type(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.loadingBox span:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loadingBox span:nth-of-type(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loadingBox span:nth-of-type(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loadingBox span:nth-of-type(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.loadingBox span:nth-of-type(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.3em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+ 
+@keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.3em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+div.loadingBar {
+  background-color: var(--window-color);
+  padding: 5px;
+  border: 2px solid var(--outline-color);
+}
+
+div.loadingBarValue {
+  width:200px;
+  height:20px;
+  -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/10%;
+  background:
+   linear-gradient(#000 0 0) 0/0% no-repeat
+    transparent;
+  animation: loading 3s 1 steps(12);
+}
+
+@keyframes loading {
+  100% {background-size:120%}
+}
+
+@media only screen and (max-width: 600px){
+  main.loadingBox {
+    margin-top: 7%;
+    width: 300px;
+    height: 300px;
+  }
+
+  div.loadingImageContainer {
+    background-color: var(--window-color);
+    width: 100%;
+    border: 3px solid var(--outline-color);
+  }
+  
+  div.loadingImageContainer img{
+    height: 100%;
+    width: 100%;
+  }
+}
