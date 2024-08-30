@@ -1,11 +1,7 @@
-import * as React from 'react';
 import styles from './about.module.css'
 import me from './me.jpg'
 
-export interface IAboutProps {
-}
-
-export default function About (props: IAboutProps) {
+export default function About () {
   return (
     <section className={styles.about}>
       <div className={styles.aboutContent}>

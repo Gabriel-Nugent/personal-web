@@ -1,13 +1,9 @@
-import * as React from 'react';
 import styles from './projects.module.css'
 import ProjectCard from './projectCard';
 import recordbin from './recordbin.png'
 import albumList from './albumLIst.png'
 
-export interface IProjectsProps {
-}
-
-export default function Projects (props: IProjectsProps) {
+export default function Projects () {
   return (
     <section className={styles.projects}>
       <h1>My Projects</h1>

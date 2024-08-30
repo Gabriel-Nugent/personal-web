@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from './desktop.module.css'
 import Clock from './clock/clock';
 import logo from './goldfish.png';
@@ -9,11 +8,7 @@ import resume from './ResumeNugent.pdf'
 import { isMobileAtom } from '../atoms';
 import { useRecoilValue } from 'recoil';
 
-
-export interface IToolbarProps {
-}
-
-export default function Toolbar (props: IToolbarProps) {
+export default function Toolbar () {
   const isMobile = useRecoilValue(isMobileAtom)
 
   return (

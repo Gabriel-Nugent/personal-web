@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from './window.module.css'
 import closeIcon from './x.png'
 import restoreDownIcon from './restoreDown.png'

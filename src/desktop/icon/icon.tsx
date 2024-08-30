@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from './icon.module.css'
 import { useRecoilValue } from 'recoil';
 import { isMobileAtom } from '../../atoms';

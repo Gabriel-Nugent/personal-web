@@ -1,11 +1,10 @@
-import * as React from 'react';
 import styles from './loadingScreen.module.css'
 import loading from './loading.gif'
 
 export interface ILoadingScreenProps {
 }
 
-export default function LoadingScreen (props: ILoadingScreenProps) {
+export default function LoadingScreen () {
   
   return (
     <div id={styles.overlay}>

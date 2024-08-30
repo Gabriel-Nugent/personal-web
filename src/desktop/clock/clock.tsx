@@ -1,10 +1,7 @@
 import * as React from 'react';
 import styles from './clock.module.css'
 
-export interface IClockProps {
-}
-
-export default function Clock (props: IClockProps) {
+export default function Clock () {
   const [date, setDate] = React.useState<string>("")
 
   React.useEffect(() => {

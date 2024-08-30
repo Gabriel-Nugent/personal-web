@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import styles from './App.module.css'
 import LoadingScreen from './loading_screen/loadingScreen'
 import Desktop from './desktop/desktop'
