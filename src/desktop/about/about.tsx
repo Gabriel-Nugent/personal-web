@@ -12,7 +12,7 @@ export default function About () {
         <div className={styles.aboutText}>
           <p className={styles.about}>
             &emsp; I'm Gabe, a Software Engineer living in San Marcos, Texas. I graduated from Texas State University with a B.S. in Computer Science in 2024.
-            I focus primarily in Computer Graphics, but I also have experience in web development. I am skilled with languages such as C++, Go, Typescript, 
+            I am skilled with languages such as C++, Go, Typescript, 
             and many more.
           </p>
           <p className={styles.about}>
